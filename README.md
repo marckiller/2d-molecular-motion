@@ -1,15 +1,37 @@
 # MolecularMotion2D
-A simple 2D gas particle simulation. It simulates the movement and elastic collisions of gas molecules, all modeled as rigid particles in a two-dimensional space.
 
-# Project Setup
+A simple 2D gas particle simulation written in Python.
 
-This project requires a virtual environment to run properly. All the necessary dependencies are specified in the `requirements.txt` file.
+The application simulates particles moving in a two-dimensional box and undergoing elastic collisions. It also includes a small GUI for changing simulation parameters and inspecting the kinetic energy distribution.
 
-## Installation Instructions
+## Demo preview
 
-### 1. Set up the virtual environment
+![MolecularMotion2D demo](assets/demo/demo.gif)
 
-Run the following command to create the virtual environment and install the required packages:
+## Screenshots
+
+### Simulation view
+
+![Simulation screenshot](assets/demo/demo_screenshot.png)
+
+### Energy histogram
+
+![Energy histogram screenshot](assets/demo/demo_analysis_screenshot.png)
+
+## Features
+
+- 2D particle motion in a bounded box
+- Elastic particle-wall and particle-particle collisions
+- Adjustable number of particles
+- Adjustable particle radius
+- Kinetic energy histogram
+- Simple graphical interface
+
+## Project setup
+
+This project requires a virtual environment. Dependencies are listed in `requirements.txt`.
+
+### 1. Create the virtual environment and install dependencies
 
 ```bash
 python setup.py
@@ -17,13 +39,19 @@ python setup.py
 
 ### 2. Activate the virtual environment
 
-Once the environment is set up, you need to activate it (MacOS, Linux):
+On macOS/Linux:
 
 ```bash
 source venv/bin/activate
 ```
 
-### 3. Run simulation
+On Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Run the simulation
 
 ```bash
 python main.py
